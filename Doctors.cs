@@ -78,5 +78,10 @@ namespace ClinicaMS
                 }
             }
         }
+
+        private void DoctorsDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

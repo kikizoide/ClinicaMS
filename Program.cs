@@ -16,7 +16,7 @@ namespace ClinicaMS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Doctors());
+            Application.Run(new Prescriptions());
         }
     }
 }

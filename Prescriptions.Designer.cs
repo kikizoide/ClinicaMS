@@ -31,8 +31,9 @@ namespace ClinicaMS
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Prescriptions));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
@@ -46,7 +47,6 @@ namespace ClinicaMS
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -56,23 +56,26 @@ namespace ClinicaMS
             this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.TestNameTb = new System.Windows.Forms.TextBox();
+            this.AddBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.PatNameTb = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.MedTb = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DocIdCb = new System.Windows.Forms.ComboBox();
+            this.DocNameTb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.PatIdCb = new System.Windows.Forms.ComboBox();
+            this.TestIdCb = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.CostTb = new System.Windows.Forms.TextBox();
+            this.PrescSumTxt = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.PrescriptionDGV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.PrintBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -81,7 +84,7 @@ namespace ClinicaMS
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PrescriptionDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -183,6 +186,7 @@ namespace ClinicaMS
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 60;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox8
             // 
@@ -223,31 +227,6 @@ namespace ClinicaMS
             this.label10.Size = new System.Drawing.Size(92, 24);
             this.label10.TabIndex = 16;
             this.label10.Text = "Pacientes";
-            // 
-            // bunifuThinButton22
-            // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.Black;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.Black;
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "Remover";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Black;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.Black;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(389, 283);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(114, 41);
-            this.bunifuThinButton22.TabIndex = 77;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
@@ -321,72 +300,49 @@ namespace ClinicaMS
             this.bunifuElipse6.ElipseRadius = 5;
             this.bunifuElipse6.TargetControl = this;
             // 
-            // textBox5
+            // TestNameTb
             // 
-            this.textBox5.Location = new System.Drawing.Point(389, 231);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(162, 21);
-            this.textBox5.TabIndex = 80;
+            this.TestNameTb.Enabled = false;
+            this.TestNameTb.Location = new System.Drawing.Point(389, 231);
+            this.TestNameTb.Multiline = true;
+            this.TestNameTb.Name = "TestNameTb";
+            this.TestNameTb.Size = new System.Drawing.Size(162, 21);
+            this.TestNameTb.TabIndex = 80;
             // 
-            // bunifuThinButton21
+            // AddBtn
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Incluir";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(265, 283);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(114, 41);
-            this.bunifuThinButton21.TabIndex = 76;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.AddBtn.ActiveBorderThickness = 1;
+            this.AddBtn.ActiveCornerRadius = 20;
+            this.AddBtn.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
+            this.AddBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.AddBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
+            this.AddBtn.BackColor = System.Drawing.Color.White;
+            this.AddBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddBtn.BackgroundImage")));
+            this.AddBtn.ButtonText = "Incluir";
+            this.AddBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
+            this.AddBtn.IdleBorderThickness = 1;
+            this.AddBtn.IdleCornerRadius = 20;
+            this.AddBtn.IdleFillColor = System.Drawing.Color.White;
+            this.AddBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
+            this.AddBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
+            this.AddBtn.Location = new System.Drawing.Point(265, 283);
+            this.AddBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.AddBtn.Name = "AddBtn";
+            this.AddBtn.Size = new System.Drawing.Size(114, 41);
+            this.AddBtn.TabIndex = 76;
+            this.AddBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
-            // bunifuCustomDataGrid1
+            // PatNameTb
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(276, 332);
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(790, 306);
-            this.bunifuCustomDataGrid1.TabIndex = 75;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(389, 172);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(162, 21);
-            this.textBox4.TabIndex = 74;
+            this.PatNameTb.Enabled = false;
+            this.PatNameTb.Location = new System.Drawing.Point(389, 172);
+            this.PatNameTb.Multiline = true;
+            this.PatNameTb.Name = "PatNameTb";
+            this.PatNameTb.Size = new System.Drawing.Size(162, 21);
+            this.PatNameTb.TabIndex = 74;
             // 
             // label17
             // 
@@ -400,13 +356,13 @@ namespace ClinicaMS
             this.label17.TabIndex = 73;
             this.label17.Text = "Paciente";
             // 
-            // textBox2
+            // MedTb
             // 
-            this.textBox2.Location = new System.Drawing.Point(586, 119);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 74);
-            this.textBox2.TabIndex = 69;
+            this.MedTb.Location = new System.Drawing.Point(586, 119);
+            this.MedTb.Multiline = true;
+            this.MedTb.Name = "MedTb";
+            this.MedTb.Size = new System.Drawing.Size(162, 74);
+            this.MedTb.TabIndex = 69;
             // 
             // label15
             // 
@@ -420,21 +376,23 @@ namespace ClinicaMS
             this.label15.TabIndex = 68;
             this.label15.Text = "Medicamentos";
             // 
-            // comboBox1
+            // DocIdCb
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(276, 116);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(90, 21);
-            this.comboBox1.TabIndex = 65;
-            this.comboBox1.Text = "ID do Médico";
+            this.DocIdCb.FormattingEnabled = true;
+            this.DocIdCb.Location = new System.Drawing.Point(276, 116);
+            this.DocIdCb.Name = "DocIdCb";
+            this.DocIdCb.Size = new System.Drawing.Size(90, 21);
+            this.DocIdCb.TabIndex = 65;
+            this.DocIdCb.Text = "ID do Médico";
+            this.DocIdCb.SelectionChangeCommitted += new System.EventHandler(this.DocIdCb_SelectionChangeCommitted);
             // 
-            // textBox1
+            // DocNameTb
             // 
-            this.textBox1.Location = new System.Drawing.Point(389, 119);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 20);
-            this.textBox1.TabIndex = 64;
+            this.DocNameTb.Enabled = false;
+            this.DocNameTb.Location = new System.Drawing.Point(389, 119);
+            this.DocNameTb.Name = "DocNameTb";
+            this.DocNameTb.Size = new System.Drawing.Size(162, 20);
+            this.DocNameTb.TabIndex = 64;
             // 
             // label8
             // 
@@ -453,23 +411,26 @@ namespace ClinicaMS
             this.bunifuElipse3.ElipseRadius = 40;
             this.bunifuElipse3.TargetControl = this;
             // 
-            // comboBox3
+            // PatIdCb
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(276, 169);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(90, 21);
-            this.comboBox3.TabIndex = 81;
-            this.comboBox3.Text = "ID do Paciente";
+            this.PatIdCb.FormattingEnabled = true;
+            this.PatIdCb.Location = new System.Drawing.Point(276, 169);
+            this.PatIdCb.Name = "PatIdCb";
+            this.PatIdCb.Size = new System.Drawing.Size(90, 21);
+            this.PatIdCb.TabIndex = 81;
+            this.PatIdCb.Text = "ID do Paciente";
+            this.PatIdCb.SelectedIndexChanged += new System.EventHandler(this.PatIdCb_SelectedIndexChanged);
+            this.PatIdCb.SelectionChangeCommitted += new System.EventHandler(this.PatIdCb_SelectionChangeCommitted_1);
             // 
-            // comboBox2
+            // TestIdCb
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(276, 232);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(90, 21);
-            this.comboBox2.TabIndex = 82;
-            this.comboBox2.Text = "ID do Teste";
+            this.TestIdCb.FormattingEnabled = true;
+            this.TestIdCb.Location = new System.Drawing.Point(276, 232);
+            this.TestIdCb.Name = "TestIdCb";
+            this.TestIdCb.Size = new System.Drawing.Size(90, 21);
+            this.TestIdCb.TabIndex = 82;
+            this.TestIdCb.Text = "ID do Teste";
+            this.TestIdCb.SelectionChangeCommitted += new System.EventHandler(this.TestIdCb_SelectionChangeCommitted);
             // 
             // label3
             // 
@@ -483,21 +444,22 @@ namespace ClinicaMS
             this.label3.TabIndex = 83;
             this.label3.Text = "Valor";
             // 
-            // textBox3
+            // CostTb
             // 
-            this.textBox3.Location = new System.Drawing.Point(586, 231);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(93, 21);
-            this.textBox3.TabIndex = 84;
+            this.CostTb.Enabled = false;
+            this.CostTb.Location = new System.Drawing.Point(586, 231);
+            this.CostTb.Multiline = true;
+            this.CostTb.Name = "CostTb";
+            this.CostTb.Size = new System.Drawing.Size(93, 21);
+            this.CostTb.TabIndex = 84;
             // 
-            // richTextBox1
+            // PrescSumTxt
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(775, 116);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(369, 208);
-            this.richTextBox1.TabIndex = 85;
-            this.richTextBox1.Text = "";
+            this.PrescSumTxt.Location = new System.Drawing.Point(775, 116);
+            this.PrescSumTxt.Name = "PrescSumTxt";
+            this.PrescSumTxt.Size = new System.Drawing.Size(369, 208);
+            this.PrescSumTxt.TabIndex = 85;
+            this.PrescSumTxt.Text = "";
             // 
             // label4
             // 
@@ -512,36 +474,134 @@ namespace ClinicaMS
             this.label4.TabIndex = 86;
             this.label4.Text = "Prescrição";
             // 
-            // Receitas
+            // PrescriptionDGV
+            // 
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.PrescriptionDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.PrescriptionDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.PrescriptionDGV.BackgroundColor = System.Drawing.Color.White;
+            this.PrescriptionDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PrescriptionDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.PrescriptionDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PrescriptionDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.PrescriptionDGV.ColumnHeadersHeight = 4;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.PrescriptionDGV.DefaultCellStyle = dataGridViewCellStyle9;
+            this.PrescriptionDGV.EnableHeadersVisualStyles = false;
+            this.PrescriptionDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.PrescriptionDGV.Location = new System.Drawing.Point(265, 381);
+            this.PrescriptionDGV.Name = "PrescriptionDGV";
+            this.PrescriptionDGV.RowHeadersVisible = false;
+            this.PrescriptionDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.PrescriptionDGV.Size = new System.Drawing.Size(835, 270);
+            this.PrescriptionDGV.TabIndex = 87;
+            this.PrescriptionDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.PrescriptionDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.PrescriptionDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.PrescriptionDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.PrescriptionDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.PrescriptionDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.PrescriptionDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.PrescriptionDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.PrescriptionDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.PrescriptionDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.PrescriptionDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.PrescriptionDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.PrescriptionDGV.ThemeStyle.HeaderStyle.Height = 4;
+            this.PrescriptionDGV.ThemeStyle.ReadOnly = false;
+            this.PrescriptionDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.PrescriptionDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.PrescriptionDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.PrescriptionDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.PrescriptionDGV.ThemeStyle.RowsStyle.Height = 22;
+            this.PrescriptionDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.PrescriptionDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.PrescriptionDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PrescriptionDGV_CellContentClick);
+            // 
+            // PrintBtn
+            // 
+            this.PrintBtn.ActiveBorderThickness = 1;
+            this.PrintBtn.ActiveCornerRadius = 20;
+            this.PrintBtn.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
+            this.PrintBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.PrintBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
+            this.PrintBtn.BackColor = System.Drawing.Color.White;
+            this.PrintBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PrintBtn.BackgroundImage")));
+            this.PrintBtn.ButtonText = "Imprimir";
+            this.PrintBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PrintBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PrintBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
+            this.PrintBtn.IdleBorderThickness = 1;
+            this.PrintBtn.IdleCornerRadius = 20;
+            this.PrintBtn.IdleFillColor = System.Drawing.Color.White;
+            this.PrintBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
+            this.PrintBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
+            this.PrintBtn.Location = new System.Drawing.Point(911, 332);
+            this.PrintBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.PrintBtn.Name = "PrintBtn";
+            this.PrintBtn.Size = new System.Drawing.Size(114, 41);
+            this.PrintBtn.TabIndex = 88;
+            this.PrintBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.PrintBtn.Click += new System.EventHandler(this.PrintBtn_Click);
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.printDocument1;
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // Prescriptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1156, 671);
+            this.Controls.Add(this.PrintBtn);
+            this.Controls.Add(this.PrescriptionDGV);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.PrescSumTxt);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.CostTb);
+            this.Controls.Add(this.TestIdCb);
+            this.Controls.Add(this.PatIdCb);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.bunifuThinButton22);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.bunifuThinButton21);
-            this.Controls.Add(this.bunifuCustomDataGrid1);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.TestNameTb);
+            this.Controls.Add(this.AddBtn);
+            this.Controls.Add(this.PatNameTb);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.MedTb);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.DocIdCb);
+            this.Controls.Add(this.DocNameTb);
             this.Controls.Add(this.label8);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Receitas";
+            this.Name = "Prescriptions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Receitas";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -553,7 +613,7 @@ namespace ClinicaMS
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PrescriptionDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -574,26 +634,24 @@ namespace ClinicaMS
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label10;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox PrescSumTxt;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.TextBox CostTb;
+        private System.Windows.Forms.ComboBox TestIdCb;
+        private System.Windows.Forms.ComboBox PatIdCb;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox TestNameTb;
+        private Bunifu.Framework.UI.BunifuThinButton2 AddBtn;
+        private System.Windows.Forms.TextBox PatNameTb;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox MedTb;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox DocIdCb;
+        private System.Windows.Forms.TextBox DocNameTb;
         private System.Windows.Forms.Label label8;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse7;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
@@ -601,5 +659,9 @@ namespace ClinicaMS
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse6;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
+        private Guna.UI2.WinForms.Guna2DataGridView PrescriptionDGV;
+        private Bunifu.Framework.UI.BunifuThinButton2 PrintBtn;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
     }
 }
