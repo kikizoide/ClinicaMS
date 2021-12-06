@@ -37,10 +37,10 @@ namespace ClinicaMS
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.RoleCb = new System.Windows.Forms.ComboBox();
+            this.UnameTb = new System.Windows.Forms.TextBox();
+            this.PassTb = new System.Windows.Forms.TextBox();
+            this.LoginBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label4 = new System.Windows.Forms.Label();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
@@ -117,57 +117,57 @@ namespace ClinicaMS
             this.label3.TabIndex = 3;
             this.label3.Text = "Senha";
             // 
-            // comboBox1
+            // RoleCb
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.RoleCb.FormattingEnabled = true;
+            this.RoleCb.Items.AddRange(new object[] {
             "Administrador",
             "Médico",
             "Recepção"});
-            this.comboBox1.Location = new System.Drawing.Point(153, 237);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(114, 21);
-            this.comboBox1.TabIndex = 4;
+            this.RoleCb.Location = new System.Drawing.Point(153, 237);
+            this.RoleCb.Name = "RoleCb";
+            this.RoleCb.Size = new System.Drawing.Size(114, 21);
+            this.RoleCb.TabIndex = 4;
             // 
-            // textBox1
+            // UnameTb
             // 
-            this.textBox1.Location = new System.Drawing.Point(153, 335);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(114, 20);
-            this.textBox1.TabIndex = 5;
+            this.UnameTb.Location = new System.Drawing.Point(153, 335);
+            this.UnameTb.Name = "UnameTb";
+            this.UnameTb.Size = new System.Drawing.Size(114, 20);
+            this.UnameTb.TabIndex = 5;
             // 
-            // textBox2
+            // PassTb
             // 
-            this.textBox2.Location = new System.Drawing.Point(153, 394);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(114, 20);
-            this.textBox2.TabIndex = 6;
+            this.PassTb.Location = new System.Drawing.Point(153, 394);
+            this.PassTb.Name = "PassTb";
+            this.PassTb.Size = new System.Drawing.Size(114, 20);
+            this.PassTb.TabIndex = 6;
             // 
-            // bunifuThinButton21
+            // LoginBtn
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Login";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(153, 441);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(114, 41);
-            this.bunifuThinButton21.TabIndex = 7;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
+            this.LoginBtn.ActiveBorderThickness = 1;
+            this.LoginBtn.ActiveCornerRadius = 20;
+            this.LoginBtn.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
+            this.LoginBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.LoginBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
+            this.LoginBtn.BackColor = System.Drawing.Color.White;
+            this.LoginBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LoginBtn.BackgroundImage")));
+            this.LoginBtn.ButtonText = "Login";
+            this.LoginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LoginBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
+            this.LoginBtn.IdleBorderThickness = 1;
+            this.LoginBtn.IdleCornerRadius = 20;
+            this.LoginBtn.IdleFillColor = System.Drawing.Color.White;
+            this.LoginBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
+            this.LoginBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
+            this.LoginBtn.Location = new System.Drawing.Point(153, 441);
+            this.LoginBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Size = new System.Drawing.Size(114, 41);
+            this.LoginBtn.TabIndex = 7;
+            this.LoginBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // label4
             // 
@@ -180,6 +180,7 @@ namespace ClinicaMS
             this.label4.Size = new System.Drawing.Size(58, 24);
             this.label4.TabIndex = 8;
             this.label4.Text = "Reset";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // bunifuElipse2
             // 
@@ -193,10 +194,10 @@ namespace ClinicaMS
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(420, 551);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.bunifuThinButton21);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.LoginBtn);
+            this.Controls.Add(this.PassTb);
+            this.Controls.Add(this.UnameTb);
+            this.Controls.Add(this.RoleCb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
@@ -219,14 +220,14 @@ namespace ClinicaMS
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox PassTb;
+        private System.Windows.Forms.TextBox UnameTb;
+        private System.Windows.Forms.ComboBox RoleCb;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuThinButton2 LoginBtn;
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
     }

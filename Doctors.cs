@@ -83,5 +83,45 @@ namespace ClinicaMS
         {
 
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            Patients obj = new Patients();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void HomeLbl_Click(object sender, EventArgs e)
+        {
+            Homes obj = new Homes();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+            LabTests obj = new LabTests();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+            Receptionists obj = new Receptionists();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -31,9 +31,9 @@ namespace ClinicaMS
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Receptionists));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
@@ -101,6 +101,7 @@ namespace ClinicaMS
             this.label14.Size = new System.Drawing.Size(68, 24);
             this.label14.TabIndex = 23;
             this.label14.Text = "Logout";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // pictureBox11
             // 
@@ -130,9 +131,10 @@ namespace ClinicaMS
             this.label13.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label13.Location = new System.Drawing.Point(71, 458);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(97, 24);
+            this.label13.Size = new System.Drawing.Size(62, 24);
             this.label13.TabIndex = 20;
-            this.label13.Text = "Recepção";
+            this.label13.Text = "Home";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // pictureBox9
             // 
@@ -155,6 +157,7 @@ namespace ClinicaMS
             this.label12.Size = new System.Drawing.Size(104, 24);
             this.label12.TabIndex = 16;
             this.label12.Text = "Laboratório";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label11
             // 
@@ -167,6 +170,7 @@ namespace ClinicaMS
             this.label11.Size = new System.Drawing.Size(82, 24);
             this.label11.TabIndex = 16;
             this.label11.Text = "Médicos";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // pictureBox2
             // 
@@ -218,6 +222,7 @@ namespace ClinicaMS
             this.label10.Size = new System.Drawing.Size(92, 24);
             this.label10.TabIndex = 16;
             this.label10.Text = "Pacientes";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // panel1
             // 
@@ -394,30 +399,30 @@ namespace ClinicaMS
             // 
             // ReceptionistDGV
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.ReceptionistDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.ReceptionistDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.ReceptionistDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ReceptionistDGV.BackgroundColor = System.Drawing.Color.White;
             this.ReceptionistDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ReceptionistDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.ReceptionistDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ReceptionistDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ReceptionistDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.ReceptionistDGV.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ReceptionistDGV.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ReceptionistDGV.DefaultCellStyle = dataGridViewCellStyle15;
             this.ReceptionistDGV.EnableHeadersVisualStyles = false;
             this.ReceptionistDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ReceptionistDGV.Location = new System.Drawing.Point(276, 332);

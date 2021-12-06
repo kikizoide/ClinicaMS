@@ -31,9 +31,9 @@ namespace ClinicaMS
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Doctors));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -59,7 +59,7 @@ namespace ClinicaMS
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.HomeLbl = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuElipse7 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -284,6 +284,7 @@ namespace ClinicaMS
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 38;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label14
             // 
@@ -296,6 +297,7 @@ namespace ClinicaMS
             this.label14.Size = new System.Drawing.Size(68, 24);
             this.label14.TabIndex = 23;
             this.label14.Text = "Logout";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // pictureBox11
             // 
@@ -328,6 +330,7 @@ namespace ClinicaMS
             this.label13.Size = new System.Drawing.Size(97, 24);
             this.label13.TabIndex = 20;
             this.label13.Text = "Recepção";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // pictureBox9
             // 
@@ -350,18 +353,20 @@ namespace ClinicaMS
             this.label12.Size = new System.Drawing.Size(104, 24);
             this.label12.TabIndex = 16;
             this.label12.Text = "Laboratório";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
-            // label11
+            // HomeLbl
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label11.Location = new System.Drawing.Point(71, 260);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(82, 24);
-            this.label11.TabIndex = 16;
-            this.label11.Text = "Médicos";
+            this.HomeLbl.AutoSize = true;
+            this.HomeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeLbl.ForeColor = System.Drawing.Color.Black;
+            this.HomeLbl.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.HomeLbl.Location = new System.Drawing.Point(71, 260);
+            this.HomeLbl.Name = "HomeLbl";
+            this.HomeLbl.Size = new System.Drawing.Size(62, 24);
+            this.HomeLbl.TabIndex = 16;
+            this.HomeLbl.Text = "Home";
+            this.HomeLbl.Click += new System.EventHandler(this.HomeLbl_Click);
             // 
             // panel2
             // 
@@ -419,6 +424,7 @@ namespace ClinicaMS
             this.label10.Size = new System.Drawing.Size(92, 24);
             this.label10.TabIndex = 16;
             this.label10.Text = "Pacientes";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // panel1
             // 
@@ -429,7 +435,7 @@ namespace ClinicaMS
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.pictureBox9);
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.HomeLbl);
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.label10);
@@ -477,30 +483,30 @@ namespace ClinicaMS
             // 
             // DoctorsDGV
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DoctorsDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.DoctorsDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.DoctorsDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DoctorsDGV.BackgroundColor = System.Drawing.Color.White;
             this.DoctorsDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DoctorsDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DoctorsDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DoctorsDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DoctorsDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.DoctorsDGV.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DoctorsDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DoctorsDGV.DefaultCellStyle = dataGridViewCellStyle15;
             this.DoctorsDGV.EnableHeadersVisualStyles = false;
             this.DoctorsDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DoctorsDGV.Location = new System.Drawing.Point(284, 365);
@@ -603,7 +609,7 @@ namespace ClinicaMS
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label HomeLbl;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label10;

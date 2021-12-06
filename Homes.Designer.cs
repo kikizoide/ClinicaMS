@@ -32,43 +32,48 @@ namespace ClinicaMS
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homes));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.LogoutLbl = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.RecepLbl = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.LabLbl = new System.Windows.Forms.Label();
+            this.DoctorLbl = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.PatientLbl = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.LabNumLbl = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.DocNumLbl = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.PatNumLbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.CovidLbl = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -80,32 +85,142 @@ namespace ClinicaMS
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(237)))), ((int)(((byte)(246)))));
-            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.LogoutLbl);
             this.panel1.Controls.Add(this.pictureBox11);
             this.panel1.Controls.Add(this.pictureBox10);
-            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.RecepLbl);
             this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.LabLbl);
+            this.panel1.Controls.Add(this.DoctorLbl);
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.PatientLbl);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 671);
             this.panel1.TabIndex = 0;
+            // 
+            // LogoutLbl
+            // 
+            this.LogoutLbl.AutoSize = true;
+            this.LogoutLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogoutLbl.ForeColor = System.Drawing.Color.Black;
+            this.LogoutLbl.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.LogoutLbl.Location = new System.Drawing.Point(71, 624);
+            this.LogoutLbl.Name = "LogoutLbl";
+            this.LogoutLbl.Size = new System.Drawing.Size(68, 24);
+            this.LogoutLbl.TabIndex = 23;
+            this.LogoutLbl.Text = "Logout";
+            this.LogoutLbl.Click += new System.EventHandler(this.LogoutLbl_Click);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(12, 611);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(53, 48);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 22;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(12, 445);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(53, 48);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 21;
+            this.pictureBox10.TabStop = false;
+            // 
+            // RecepLbl
+            // 
+            this.RecepLbl.AutoSize = true;
+            this.RecepLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RecepLbl.ForeColor = System.Drawing.Color.Black;
+            this.RecepLbl.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.RecepLbl.Location = new System.Drawing.Point(71, 458);
+            this.RecepLbl.Name = "RecepLbl";
+            this.RecepLbl.Size = new System.Drawing.Size(97, 24);
+            this.RecepLbl.TabIndex = 20;
+            this.RecepLbl.Text = "Recepção";
+            this.RecepLbl.Click += new System.EventHandler(this.RecepLbl_Click);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(12, 345);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(53, 48);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 19;
+            this.pictureBox9.TabStop = false;
+            // 
+            // LabLbl
+            // 
+            this.LabLbl.AutoSize = true;
+            this.LabLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabLbl.ForeColor = System.Drawing.Color.Black;
+            this.LabLbl.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.LabLbl.Location = new System.Drawing.Point(71, 357);
+            this.LabLbl.Name = "LabLbl";
+            this.LabLbl.Size = new System.Drawing.Size(104, 24);
+            this.LabLbl.TabIndex = 16;
+            this.LabLbl.Text = "Laboratório";
+            this.LabLbl.Click += new System.EventHandler(this.LabLbl_Click);
+            // 
+            // DoctorLbl
+            // 
+            this.DoctorLbl.AutoSize = true;
+            this.DoctorLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DoctorLbl.ForeColor = System.Drawing.Color.Black;
+            this.DoctorLbl.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.DoctorLbl.Location = new System.Drawing.Point(71, 260);
+            this.DoctorLbl.Name = "DoctorLbl";
+            this.DoctorLbl.Size = new System.Drawing.Size(82, 24);
+            this.DoctorLbl.TabIndex = 16;
+            this.DoctorLbl.Text = "Médicos";
+            this.DoctorLbl.Click += new System.EventHandler(this.DoctorLbl_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(12, 250);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(53, 48);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 18;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(12, 152);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(53, 48);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 17;
+            this.pictureBox7.TabStop = false;
+            // 
+            // PatientLbl
+            // 
+            this.PatientLbl.AutoSize = true;
+            this.PatientLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PatientLbl.ForeColor = System.Drawing.Color.Black;
+            this.PatientLbl.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.PatientLbl.Location = new System.Drawing.Point(71, 164);
+            this.PatientLbl.Name = "PatientLbl";
+            this.PatientLbl.Size = new System.Drawing.Size(92, 24);
+            this.PatientLbl.TabIndex = 16;
+            this.PatientLbl.Text = "Pacientes";
+            this.PatientLbl.Click += new System.EventHandler(this.PatientLbl_Click);
             // 
             // pictureBox1
             // 
@@ -131,6 +246,7 @@ namespace ClinicaMS
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label1
             // 
@@ -158,7 +274,7 @@ namespace ClinicaMS
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.LabNumLbl);
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.pictureBox5);
             this.panel5.ForeColor = System.Drawing.Color.White;
@@ -167,17 +283,17 @@ namespace ClinicaMS
             this.panel5.Size = new System.Drawing.Size(300, 143);
             this.panel5.TabIndex = 16;
             // 
-            // label7
+            // LabNumLbl
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Gold;
-            this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label7.Location = new System.Drawing.Point(106, 82);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(177, 24);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Testes Laboratoriais";
+            this.LabNumLbl.AutoSize = true;
+            this.LabNumLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabNumLbl.ForeColor = System.Drawing.Color.Gold;
+            this.LabNumLbl.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.LabNumLbl.Location = new System.Drawing.Point(106, 82);
+            this.LabNumLbl.Name = "LabNumLbl";
+            this.LabNumLbl.Size = new System.Drawing.Size(177, 24);
+            this.LabNumLbl.TabIndex = 15;
+            this.LabNumLbl.Text = "Testes Laboratoriais";
             // 
             // label4
             // 
@@ -204,7 +320,7 @@ namespace ClinicaMS
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.DocNumLbl);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.pictureBox4);
             this.panel4.ForeColor = System.Drawing.Color.White;
@@ -213,17 +329,17 @@ namespace ClinicaMS
             this.panel4.Size = new System.Drawing.Size(300, 143);
             this.panel4.TabIndex = 15;
             // 
-            // label6
+            // DocNumLbl
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Gold;
-            this.label6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label6.Location = new System.Drawing.Point(132, 82);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(82, 24);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Médicos";
+            this.DocNumLbl.AutoSize = true;
+            this.DocNumLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DocNumLbl.ForeColor = System.Drawing.Color.Gold;
+            this.DocNumLbl.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.DocNumLbl.Location = new System.Drawing.Point(132, 82);
+            this.DocNumLbl.Name = "DocNumLbl";
+            this.DocNumLbl.Size = new System.Drawing.Size(82, 24);
+            this.DocNumLbl.TabIndex = 15;
+            this.DocNumLbl.Text = "Médicos";
             // 
             // label3
             // 
@@ -250,7 +366,7 @@ namespace ClinicaMS
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.PatNumLbl);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.ForeColor = System.Drawing.Color.White;
@@ -260,17 +376,18 @@ namespace ClinicaMS
             this.panel3.TabIndex = 0;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // label5
+            // PatNumLbl
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Gold;
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Location = new System.Drawing.Point(127, 82);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 24);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Pacientes";
+            this.PatNumLbl.AutoSize = true;
+            this.PatNumLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PatNumLbl.ForeColor = System.Drawing.Color.Gold;
+            this.PatNumLbl.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.PatNumLbl.Location = new System.Drawing.Point(127, 82);
+            this.PatNumLbl.Name = "PatNumLbl";
+            this.PatNumLbl.Size = new System.Drawing.Size(92, 24);
+            this.PatNumLbl.TabIndex = 15;
+            this.PatNumLbl.Text = "Pacientes";
+            this.PatNumLbl.Click += new System.EventHandler(this.PatNumLbl_Click);
             // 
             // label2
             // 
@@ -312,7 +429,7 @@ namespace ClinicaMS
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel6.Controls.Add(this.label8);
+            this.panel6.Controls.Add(this.CovidLbl);
             this.panel6.Controls.Add(this.label9);
             this.panel6.Controls.Add(this.pictureBox6);
             this.panel6.ForeColor = System.Drawing.Color.White;
@@ -321,17 +438,17 @@ namespace ClinicaMS
             this.panel6.Size = new System.Drawing.Size(300, 143);
             this.panel6.TabIndex = 16;
             // 
-            // label8
+            // CovidLbl
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Gold;
-            this.label8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label8.Location = new System.Drawing.Point(127, 82);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(94, 24);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "COVID-19";
+            this.CovidLbl.AutoSize = true;
+            this.CovidLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CovidLbl.ForeColor = System.Drawing.Color.Gold;
+            this.CovidLbl.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.CovidLbl.Location = new System.Drawing.Point(127, 82);
+            this.CovidLbl.Name = "CovidLbl";
+            this.CovidLbl.Size = new System.Drawing.Size(94, 24);
+            this.CovidLbl.TabIndex = 15;
+            this.CovidLbl.Text = "COVID-19";
             // 
             // label9
             // 
@@ -365,116 +482,6 @@ namespace ClinicaMS
             this.bunifuElipse6.ElipseRadius = 5;
             this.bunifuElipse6.TargetControl = this;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label10.Location = new System.Drawing.Point(71, 164);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(92, 24);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "Pacientes";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(12, 152);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(53, 48);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 17;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(12, 250);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(53, 48);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 18;
-            this.pictureBox8.TabStop = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label11.Location = new System.Drawing.Point(71, 260);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(82, 24);
-            this.label11.TabIndex = 16;
-            this.label11.Text = "Médicos";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label12.Location = new System.Drawing.Point(71, 357);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(104, 24);
-            this.label12.TabIndex = 16;
-            this.label12.Text = "Laboratório";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(12, 345);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(53, 48);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 19;
-            this.pictureBox9.TabStop = false;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label13.Location = new System.Drawing.Point(71, 458);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(97, 24);
-            this.label13.TabIndex = 20;
-            this.label13.Text = "Recepção";
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(12, 445);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(53, 48);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 21;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(12, 611);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(53, 48);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 22;
-            this.pictureBox11.TabStop = false;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label14.Location = new System.Drawing.Point(71, 624);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(68, 24);
-            this.label14.TabIndex = 23;
-            this.label14.Text = "Logout";
-            // 
             // Homes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -493,6 +500,11 @@ namespace ClinicaMS
             this.Text = "Homes";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -508,11 +520,6 @@ namespace ClinicaMS
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -531,30 +538,30 @@ namespace ClinicaMS
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label LabNumLbl;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label DocNumLbl;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label PatNumLbl;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label CovidLbl;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label LogoutLbl;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label RecepLbl;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label LabLbl;
+        private System.Windows.Forms.Label DoctorLbl;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label PatientLbl;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse5;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse6;
     }
